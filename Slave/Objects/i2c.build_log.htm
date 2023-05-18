@@ -1,0 +1,340 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Md. Sadmin Tahmid Khan, University of Dhaka, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Asus\Documents\traffic_system_i2c-master\i2c.uvprojx
+Project File Date:  05/10/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(24): warning: no previous extern declaration for non-static variable 'timer' [-Wmissing-variable-declarations]
+int timer = 0;
+    ^
+main.c(24): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int timer = 0;
+^
+main.c(25): warning: no previous extern declaration for non-static variable 'e_tmp' [-Wmissing-variable-declarations]
+int e_tmp = 0;
+    ^
+main.c(25): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int e_tmp = 0;
+^
+main.c(32): warning: no previous extern declaration for non-static variable 'red' [-Wmissing-variable-declarations]
+int red = 3;
+    ^
+main.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int red = 3;
+^
+main.c(33): warning: no previous extern declaration for non-static variable 'green' [-Wmissing-variable-declarations]
+int green = 3;
+    ^
+main.c(33): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int green = 3;
+^
+main.c(34): warning: no previous extern declaration for non-static variable 'yellow' [-Wmissing-variable-declarations]
+int     yellow = 0;
+        ^
+main.c(34): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int     yellow = 0;
+^
+main.c(35): warning: no previous extern declaration for non-static variable 'extra' [-Wmissing-variable-declarations]
+int extra = 5;
+    ^
+main.c(35): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int extra = 5;
+^
+main.c(37): warning: no previous extern declaration for non-static variable 'traffic_monitor' [-Wmissing-variable-declarations]
+int traffic_monitor=10;
+    ^
+main.c(37): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int traffic_monitor=10;
+^
+main.c(55): warning: no previous extern declaration for non-static variable 't1' [-Wmissing-variable-declarations]
+char t1[4][200] = {
+     ^
+main.c(55): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char t1[4][200] = {
+^
+main.c(61): warning: no previous extern declaration for non-static variable 't2a' [-Wmissing-variable-declarations]
+char t2a[4][200] = {
+     ^
+main.c(61): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char t2a[4][200] = {
+^
+main.c(65): warning: no previous extern declaration for non-static variable 't2b' [-Wmissing-variable-declarations]
+char t2b[4][200] = {
+     ^
+main.c(65): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char t2b[4][200] = {
+^
+main.c(95): warning: declaration shadows a variable in the global scope [-Wshadow]
+                                int x = rand()%2;
+                                    ^
+main.c(28): note: previous declaration is here
+int x, w, y, z, u, D;
+    ^
+main.c(96): warning: declaration shadows a variable in the global scope [-Wshadow]
+                                int y = rand()%2;
+                                    ^
+main.c(28): note: previous declaration is here
+int x, w, y, z, u, D;
+          ^
+main.c(95): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+                                int x = rand()%2;
+                                    ^
+main.c(95): warning: unused variable 'x' [-Wunused-variable]
+main.c(96): warning: unused variable 'y' [-Wunused-variable]
+                                int y = rand()%2;
+                                    ^
+main.c(83): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+                        char str[10];
+                             ^
+main.c(69): warning: no previous prototype for function 'TIM6_DAC_IRQHandler' [-Wmissing-prototypes]
+void TIM6_DAC_IRQHandler(void)
+     ^
+main.c(69): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM6_DAC_IRQHandler(void)
+^
+static 
+main.c(144): warning: no previous prototype for function 'TIM6_Config' [-Wmissing-prototypes]
+void TIM6_Config(void)
+     ^
+main.c(144): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM6_Config(void)
+^
+static 
+main.c(178): warning: no previous prototype for function 'handle_string' [-Wmissing-prototypes]
+void handle_string(char *str, int index, int type)
+     ^
+main.c(178): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void handle_string(char *str, int index, int type)
+^
+static 
+main.c(189): warning: no previous prototype for function 'intToString' [-Wmissing-prototypes]
+char *intToString(int num)
+      ^
+main.c(189): note: declare 'static' if the function is not intended to be used outside of this translation unit
+char *intToString(int num)
+^
+static 
+main.c(195): warning: no previous prototype for function 'handle_input' [-Wmissing-prototypes]
+int handle_input(char *str)
+    ^
+main.c(195): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int handle_input(char *str)
+^
+static 
+main.c(213): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void process_output()
+                   ^
+                    void
+main.c(219): warning: possible misuse of comma operator here [-Wcomma]
+                green = w,
+                         ^
+main.c(219): note: cast expression to void to silence warning
+                green = w,
+                ^~~~~~~~~
+                (void)(  )
+main.c(220): warning: possible misuse of comma operator here [-Wcomma]
+                yellow = y,
+                          ^
+main.c(220): note: cast expression to void to silence warning
+                yellow = y,
+                ^~~~~~~~~~
+                (void)(   )
+main.c(221): warning: possible misuse of comma operator here [-Wcomma]
+                red = z,
+                       ^
+main.c(221): note: cast expression to void to silence warning
+                red = z,
+                ^~~~~~~
+                (void)()
+main.c(213): warning: no previous prototype for function 'process_output' [-Wmissing-prototypes]
+void process_output()
+     ^
+main.c(213): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void process_output()
+^
+static 
+main.c(343): warning: declaration shadows a variable in the global scope [-Wshadow]
+                                        int x = rand()%2;
+                                            ^
+main.c(28): note: previous declaration is here
+int x, w, y, z, u, D;
+    ^
+main.c(344): warning: declaration shadows a variable in the global scope [-Wshadow]
+                                        int y = rand()%2;
+                                            ^
+main.c(28): note: previous declaration is here
+int x, w, y, z, u, D;
+          ^
+main.c(353): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                                        ms_delay(delay);                                                
+                                                        ~~~~~~~~ ^~~~~
+main.c(370): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                                        ms_delay(delay);                                                
+                                                        ~~~~~~~~ ^~~~~
+main.c(343): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+                                        int x = rand()%2;
+                                            ^
+main.c(396): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(22): warning: no previous extern declaration for non-static variable 'tmp' [-Wmissing-variable-declarations]
+char tmp[100];
+     ^
+main.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char tmp[100];
+^
+main.c(27): warning: no previous extern declaration for non-static variable 'a' [-Wmissing-variable-declarations]
+int a, b, c, d;
+    ^
+main.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a, b, c, d;
+^
+main.c(27): warning: no previous extern declaration for non-static variable 'b' [-Wmissing-variable-declarations]
+int a, b, c, d;
+       ^
+main.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a, b, c, d;
+^
+main.c(27): warning: no previous extern declaration for non-static variable 'c' [-Wmissing-variable-declarations]
+int a, b, c, d;
+          ^
+main.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a, b, c, d;
+^
+main.c(27): warning: no previous extern declaration for non-static variable 'd' [-Wmissing-variable-declarations]
+int a, b, c, d;
+             ^
+main.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int a, b, c, d;
+^
+main.c(28): warning: no previous extern declaration for non-static variable 'x' [-Wmissing-variable-declarations]
+int x, w, y, z, u, D;
+    ^
+main.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int x, w, y, z, u, D;
+^
+main.c(28): warning: no previous extern declaration for non-static variable 'w' [-Wmissing-variable-declarations]
+int x, w, y, z, u, D;
+       ^
+main.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int x, w, y, z, u, D;
+^
+main.c(28): warning: no previous extern declaration for non-static variable 'y' [-Wmissing-variable-declarations]
+int x, w, y, z, u, D;
+          ^
+main.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int x, w, y, z, u, D;
+^
+main.c(28): warning: no previous extern declaration for non-static variable 'z' [-Wmissing-variable-declarations]
+int x, w, y, z, u, D;
+             ^
+main.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int x, w, y, z, u, D;
+^
+main.c(28): warning: no previous extern declaration for non-static variable 'u' [-Wmissing-variable-declarations]
+int x, w, y, z, u, D;
+                ^
+main.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int x, w, y, z, u, D;
+^
+main.c(28): warning: no previous extern declaration for non-static variable 'D' [-Wmissing-variable-declarations]
+int x, w, y, z, u, D;
+                   ^
+main.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int x, w, y, z, u, D;
+^
+main.c(36): warning: no previous extern declaration for non-static variable 'delay' [-Wmissing-variable-declarations]
+int delay;
+    ^
+main.c(36): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int delay;
+^
+main.c(50): warning: no previous extern declaration for non-static variable 'traffic1' [-Wmissing-variable-declarations]
+char traffic1[200];
+     ^
+main.c(50): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char traffic1[200];
+^
+main.c(51): warning: no previous extern declaration for non-static variable 'traffic2' [-Wmissing-variable-declarations]
+char traffic2[200];
+     ^
+main.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char traffic2[200];
+^
+main.c(52): warning: no previous extern declaration for non-static variable 'traffic3' [-Wmissing-variable-declarations]
+char traffic3[200];
+     ^
+main.c(52): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char traffic3[200];
+^
+main.c(53): warning: no previous extern declaration for non-static variable 'final_output' [-Wmissing-variable-declarations]
+char final_output[500];
+     ^
+main.c(53): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char final_output[500];
+^
+main.c(20): warning: unused variable 'global_time' [-Wunused-variable]
+static uint32_t global_time = 0;
+                ^
+49 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=19564 RO-data=1248 RW-data=2420 ZI-data=3232  
+".\Objects\i2c.axf" - 0 Error(s), 49 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Asus/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Asus/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f446xx.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   MDK/Device/Source/ARM/STM32F446xx_OPT.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
